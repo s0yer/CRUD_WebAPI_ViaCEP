@@ -1,0 +1,12 @@
+
+
+> CEPs Testados
+
+13035000
+88032005
+09530700
+13036902
+13041304
+
+> Teste em banco local MySql
+

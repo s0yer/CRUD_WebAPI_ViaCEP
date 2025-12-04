@@ -1,0 +1,26 @@
+
+# para testar apiwebviacep usando container mysql
+
+version: '3.8'
+
+services:
+  # servico MySQL
+  mysql_db:
+    image: mysql:8.0 # versao
+    container_name: mysql_api_cep # nome container
+    environment:
+      # para logar no mysql, via defaultconnections
+      MYSQL_ROOT_PASSWORD: pixeon1234 
+      MYSQL_DATABASE: db_webapi_viacep_pixeon 
+    ports:
+      # 3306 é a porta que seu HOST usará para acessar o MySQL      Host:Container
+      - "3306:3306"
+    volumes:
+      # Persistência dos dados
+      - mysql_data:/var/lib/mysql
+    restart: unless-stopped # reinicia docker
+
+# Define os volumes de dados
+volumes:
+  mysql_data:
+  
