@@ -1,5 +1,5 @@
 
-# Objetivo
+## Objetivo
 
 ApiWeb de acesso a ApiExterna Viacep.
 Consome ApiExterna Trazendo endereco.
@@ -8,21 +8,21 @@ Valida Cep no servico de ApiExterna.
 
 # Arquitetura e especificações
 
-> .net 8
-> database MySql
-> Api Externa ViaCep - https://viacep.com.br/
-> Servicos de CRUD
-> EF Core
-> Controller -> Service -> Data 
+- .net 8
+- database MySql
+- Api Externa ViaCep - https://viacep.com.br/
+- Servicos de CRUD
+- EF Core
+- Controller -> Service -> Data 
 
 # Estrutura Projeto
 
-Service
-Controller
-Data
-Models
-Migrations
-Testes
+-Service
+-Controller
+-Data
+-Models
+-Migrations
+-Testes
 
 
 # Configuração do Banco de Dados
