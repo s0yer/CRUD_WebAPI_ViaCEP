@@ -30,6 +30,7 @@
 executar o MySql Localhost, ou subir container docker_compose com MySql:
 
 > docker version
+
 > docker compose up -d
 
 ### Criando migrations no database ( cria modelo identico ao Models do projeto )
@@ -39,6 +40,7 @@ executar o MySql Localhost, ou subir container docker_compose com MySql:
 - no diretorio do projeto
 
 > dotnet ef migrations add InitialCreate
+
 > dotnet ef database update
 
 ### Executando o projeto
