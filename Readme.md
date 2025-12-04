@@ -15,7 +15,7 @@ Valida Cep no servico de ApiExterna.
 - EF Core
 - Controller -> Service -> Data 
 
-# Estrutura Projeto
+### Estrutura Projeto
 
 -Service
 -Controller
@@ -25,27 +25,27 @@ Valida Cep no servico de ApiExterna.
 -Testes
 
 
-# Configuração do Banco de Dados
+### Configuração do Banco de Dados
 
 executar o MySql Localhost, ou subir container docker_compose com MySql:
 
 docker version
 docker compose up -d
 
-# Criando migrations no database ( cria modelo identico ao Models do projeto )
+### Criando migrations no database ( cria modelo identico ao Models do projeto )
 
 dotnet tool install --global dotnet-ef
 
-> no diretorio do projeto
+- no diretorio do projeto
 
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 
-# Executando o projeto
+### Executando o projeto
 
 dotnet run ou compilar no Visual Studio ( IIS express .net 8 )
 
-# Validacoes
+### Validacoes
 
 Formato para entrada do cep na mascara ex. "88032005"
 Nao cadastra Cep ja cadastrado
